@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--Brightorange: hsl(31, 77%, 52%);
+--Darkcyan: hsl(184, 100%, 22%);
+--Verydarkcyan: hsl(179, 100%, 13%);
+--Transparentwhite: hsla(0, 0%, 100%, 0.75);
+--Verylightgray: hsl(0, 0%, 95%);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main-container{
+    display: flex;
+    width: 60rem;
+    height: 28rem;
+    border-radius: 1rem;
+    
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+section img{
+    width: 3rem;
+    height: 2rem;
+}
+
+button{
+    border-radius: 2rem;
+    border-style: none;
+    background-color: var(--Verylightgray);
+    width: 7.5rem;
+    height: 2.5rem;
+    margin-top: 2rem;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+h2{
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: var(--Verylightgray);
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: var(--Transparentwhite); 
+    padding: 0 2rem 0 0;
+    line-height: 1.5;
+    
+}
+.section-1{
+    background-color: var(--Brightorange);
+    border-radius: 1rem 0 0 1rem;
+}
+
+.section-1 button{
+    color: var(--Brightorange);
+}
+
+.btn-section-1:hover{
+    background-color: var(--Brightorange);
+    cursor: pointer;
+    border: 0.2rem solid var(--Verylightgray);
+    color: var(--Verylightgray);
+}
+
+.section-2{
+    background-color: var(--Darkcyan);
+}
+
+.section-2 button{
+    color: var(--Darkcyan);
+}
+
+.btn-section-2:hover{
+    background-color: var(--Darkcyan);
+    cursor: pointer;
+    border: 0.2rem solid var(--Verylightgray);
+    color: var(--Verylightgray);
+}
+
+.section-3{
+    background-color: var(--Verydarkcyan);
+    border-radius: 0 1rem 1rem 0;
+}
+
+.section-3 button{
+    color: var(--Verydarkcyan);
+}
+
+.btn-section-3:hover{
+    background-color: var(--Verydarkcyan);
+    cursor: pointer;
+    border: 0.2rem solid var(--Verylightgray);
+    color: var(--Verylightgray);
+}
+
+@media (max-width: 375px){
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        width: 80vh;
+        height: 90%;   
+    }
+
+    .section-1{
+        border-radius: 1rem 1rem 0 0;
+
+    }
+
+    .section-3{
+        
+        border-radius: 0 0 1rem 1rem;
+    }
+}
